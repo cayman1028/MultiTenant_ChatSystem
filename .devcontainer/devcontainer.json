@@ -1,0 +1,26 @@
+{
+	"name": "Python & TypeScript",
+	"image": "ghcr.io/prulloac/base:ubuntu-24.04",
+	
+	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/prulloac/devcontainer-features/bun:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-contrib/features/poetry:2": {},
+		"ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {}
+	},
+
+	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// 👇 Configure tool-specific properties.
+	// "customizations": {},
+
+	// 👇 Connect as root to have full file permissions
+	"remoteUser": "root",
+	
+	// Add post-create commands to ensure proper permissions
+	"postCreateCommand": "chmod -R 777 /workspaces"
+}

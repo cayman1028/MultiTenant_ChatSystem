@@ -1,0 +1,81 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - bot_challenge
+  - ask_service
+  - ask_contact
+  - ask_support
+
+responses:
+  # 日本語の応答
+  utter_greet_ja:
+    - text: "こんにちは！当社のチャットボットへようこそ。どのようにお手伝いできますか？"
+  
+  utter_goodbye_ja:
+    - text: "ありがとうございました。またのお問い合わせをお待ちしております。"
+    
+  utter_thank_ja:
+    - text: "どういたしまして。他にご質問があればお気軽にどうぞ。"
+    
+  utter_iamabot_ja:
+    - text: "私はサポート自動応答ボットです。お客様のお手伝いをさせていただきます。"
+    
+  utter_services_ja:
+    - text: "当社では、コンサルティング、システム開発、保守サポートなどのサービスを提供しております。詳細は当社ホームページをご覧ください。"
+    
+  utter_contact_ja:
+    - text: "お問い合わせは、電話: 03-1234-5678、またはメール: info@example.co.jp までお願いいたします。"
+    
+  utter_support_ja:
+    - text: "技術サポートが必要な場合は、専用窓口（support@example.co.jp）にご連絡ください。24時間以内に対応いたします。"
+
+  # 英語の応答（テナントB用）
+  utter_greet_en:
+    - text: "Hello! Welcome to our chat support. How can I help you today?"
+  
+  utter_goodbye_en:
+    - text: "Thank you for your inquiry. We look forward to serving you again."
+    
+  utter_thank_en:
+    - text: "You're welcome. Feel free to ask if you have any other questions."
+    
+  utter_iamabot_en:
+    - text: "I am an automated support bot. I'm here to assist you."
+    
+  utter_services_en:
+    - text: "We offer consulting, system development, and maintenance support services. Please visit our website for more details."
+    
+  utter_contact_en:
+    - text: "For inquiries, please contact us at phone: 03-1234-5678, or email: info@example.co.jp."
+    
+  utter_support_en:
+    - text: "For technical support, please contact our dedicated support team at support@example.co.jp. We will respond within 24 hours."
+
+  # 元の応答はバックワードコンパティビリティのために残しておく
+  utter_greet:
+    - text: "こんにちは！当社のチャットボットへようこそ。どのようにお手伝いできますか？"
+  
+  utter_goodbye:
+    - text: "ありがとうございました。またのお問い合わせをお待ちしております。"
+    
+  utter_thank:
+    - text: "どういたしまして。他にご質問があればお気軽にどうぞ。"
+    
+  utter_iamabot:
+    - text: "私はサポート自動応答ボットです。お客様のお手伝いをさせていただきます。"
+    
+  utter_services:
+    - text: "当社では、コンサルティング、システム開発、保守サポートなどのサービスを提供しております。詳細は当社ホームページをご覧ください。"
+    
+  utter_contact:
+    - text: "お問い合わせは、電話: 03-1234-5678、またはメール: info@example.co.jp までお願いいたします。"
+    
+  utter_support:
+    - text: "技術サポートが必要な場合は、専用窓口（support@example.co.jp）にご連絡ください。24時間以内に対応いたします。"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

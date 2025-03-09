@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社サンプル - ITソリューション</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-container">
+            <div class="logo">株式会社サンプル</div>
+            <nav>
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">サービス</a></li>
+                    <li><a href="#">事例</a></li>
+                    <li><a href="#">会社情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- メインコンテンツ -->
+    <main>
+        <section class="hero">
+            <h1>先進的なITソリューションで<br>ビジネスの課題を解決します</h1>
+            <p>株式会社サンプルは、最新のテクノロジーを活用したソリューションを提供し、お客様のビジネス成長をサポートします。</p>
+            <a href="#" class="cta-button">サービスについて詳しく</a>
+        </section>
+        
+        <h2>提供サービス</h2>
+        <div class="services">
+            <div class="service-card">
+                <div class="service-image">コンサルティング</div>
+                <div class="service-content">
+                    <h3>ITコンサルティング</h3>
+                    <p>お客様のビジネス課題を分析し、最適なIT戦略を提案します。デジタルトランスフォーメーションを成功に導くための包括的なコンサルティングサービスを提供しています。</p>
+                    <a href="#">詳細を見る →</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-image">システム開発</div>
+                <div class="service-content">
+                    <h3>カスタムシステム開発</h3>
+                    <p>お客様のニーズに合わせた柔軟なシステム開発を行います。Webアプリケーション、業務システム、モバイルアプリなど、幅広い開発実績があります。</p>
+                    <a href="#">詳細を見る →</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-image">保守サポート</div>
+                <div class="service-content">
+                    <h3>保守・運用サポート</h3>
+                    <p>開発したシステムの安定稼働を維持するための継続的なサポートを提供します。24時間365日の監視体制で、システムの安定性を確保します。</p>
+                    <a href="#">詳細を見る →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>株式会社サンプル</h3>
+                <p>〒100-0001<br>東京都千代田区千代田1-1-1<br>サンプルビル3F</p>
+                <p>TEL: 03-1234-5678<br>Email: info@example.co.jp</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>サービス一覧</h3>
+                <ul>
+                    <li><a href="#">ITコンサルティング</a></li>
+                    <li><a href="#">システム開発</a></li>
+                    <li><a href="#">保守・運用サポート</a></li>
+                    <li><a href="#">クラウドソリューション</a></li>
+                    <li><a href="#">セキュリティ対策</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>お役立ち情報</h3>
+                <ul>
+                    <li><a href="#">ブログ</a></li>
+                    <li><a href="#">事例紹介</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            © 2025 株式会社サンプル All Rights Reserved.
+        </div>
+    </footer>
+    
+    <!-- チャットボットウィジェット -->
+    <div class="chat-widget-container" id="chat-widget-container">
+        <div class="chat-icon" id="chat-icon" style="display: flex;">
+            <div class="chat-icon-label">サポート</div>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"></path>
+            </svg>
+        </div>
+        
+        <div class="chat-window" id="chat-window" style="display: none;">
+            <div class="chat-header">
+                <div>企業チャットサポート</div>
+                <div class="chat-close" id="chat-close">✕</div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <!-- メッセージはJSで動的に追加 -->
+            </div>
+            
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chat-input" placeholder="メッセージを入力してください...">
+                <button class="chat-send-btn" id="chat-send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="white"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScriptファイルを読み込み -->
+    <script src="chat.js"></script>
+</body>
+</html>

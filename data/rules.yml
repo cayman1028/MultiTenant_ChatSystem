@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to thank you
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Provide service information
+  steps:
+  - intent: ask_service
+  - action: utter_services
+
+- rule: Provide contact information
+  steps:
+  - intent: ask_contact
+  - action: utter_contact
+
+- rule: Provide support information
+  steps:
+  - intent: ask_support
+  - action: utter_support
