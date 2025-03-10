@@ -1,0 +1,19 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
+    },
+    "yaml.customTags": [
+        "!reference sequence"
+    ],
+    "yaml.validate": true,
+    "yaml.format.enable": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "advanced"
+    },
+    "yaml.hover": true,
+    "yaml.completion": true,
+    "yaml.disableAdditionalProperties": false,
+    "yaml.schemaStore.enable": true
+} 
