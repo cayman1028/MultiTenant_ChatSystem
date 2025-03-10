@@ -3,7 +3,8 @@
         "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
     },
     "yaml.customTags": [
-        "!reference sequence"
+        "!reference sequence",
+        "${{ variable }}"
     ],
     "yaml.validate": true,
     "yaml.format.enable": true,
@@ -15,5 +16,6 @@
     "yaml.hover": true,
     "yaml.completion": true,
     "yaml.disableAdditionalProperties": false,
-    "yaml.schemaStore.enable": true
+    "yaml.schemaStore.enable": true,
+    "problems.decorations.enabled": false
 } 
