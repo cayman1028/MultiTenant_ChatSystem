@@ -1,2 +1,4 @@
 .vercel
 venv/
+node_modules/
+frontend/node_modules/

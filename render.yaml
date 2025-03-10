@@ -1,10 +1,9 @@
 services:
   - type: web
     name: multi-tenant-chat-system
-    env: static
+    env: node
     buildCommand: cd frontend && npm install
-    staticPublishPath: ./frontend
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html 
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: PORT
+        value: 10000 
