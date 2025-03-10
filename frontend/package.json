@@ -1,0 +1,13 @@
+{
+  "name": "multi-tenant-chat-system-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Multi-Tenant Chat System",
+  "main": "chat.js",
+  "scripts": {
+    "start": "echo \"No start script needed for static files\" && exit 0",
+    "build": "echo \"No build step needed for static files\" && exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "private": true
+} 
