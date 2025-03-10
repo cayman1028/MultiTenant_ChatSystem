@@ -6,4 +6,5 @@ services:
     startCommand: cd frontend && npm start
     envVars:
       - key: PORT
-        value: 10000 
+        value: 10000
+    healthCheckPath: / 
