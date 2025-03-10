@@ -30,6 +30,6 @@ jobs:
     steps:
       - name: Deploy to Render
         env:
-          deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
         run: |
-          curl "$deploy_url" 
+          curl "$DEPLOY_URL" 
