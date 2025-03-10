@@ -1,6 +1,5 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 # VSCode用の設定：このファイルはGitHub Actionsのワークフローファイルです
-# 警告を無視: RENDER_DEPLOY_HOOK_URL
 
 name: CI/CD Pipeline
 
@@ -33,8 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Render
-        # 環境変数を直接run内で設定することで警告を回避
-        run: |
-          # GitHub Secretsから取得したRender.comのDeploy Hook URL
-          DEPLOY_URL="${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
-          curl "$DEPLOY_URL" 
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }} 
